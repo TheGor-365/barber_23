@@ -1,25 +1,25 @@
-<div class="container col-6">
+<div id="aaa" class="container col-6 p-5">
   <h2 class="mt-5 mb-5">Visit us</h2>
 
   <form action="/visit" method="post">
 
     <div class="mb-3">
       <label class="form-label">Your name</label>
-      <input name="username" type="text" class="form-control" placeholder="Enter name">
+      <input name="username" type="text" class="form-control bbb" placeholder="Enter name">
     </div>
 
     <div class="mb-3">
       <label class="form-label">Your phone</label>
-      <input name="phone" type="text" class="form-control" placeholder="Enter phone">
+      <input name="phone" type="text" class="form-control bbb" placeholder="Enter phone">
     </div>
 
     <div class="mb-3">
       <label class="form-label">Your visiting date and time</label>
-      <input name="datetime" type="text" class="form-control" placeholder="Enter date and time">
+      <input name="datetime" type="text" class="form-control bbb" placeholder="Enter date and time">
     </div>
 
     <div class="mb-3">
-      <select class="form-select" name="barber">
+      <select class="form-select bbb" name="barber">
         <option selected>Choose your barber</option>
         <option value="Jessie Pincman">Jessie Pincman</option>
         <option value="Walter White">Walter White</option>
@@ -27,8 +27,11 @@
       </select>
     </div>
 
-
-
     <button type="submit" class="btn btn-primary">Visit</button>
   </form>
 </div>
+
+<script type="text/javascript">
+  $('#aaa').css('background-color', '#b4fff6');
+  $('.bbb').css('background-color', '#d7feff');
+</script>
