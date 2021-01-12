@@ -60,6 +60,7 @@ post '/visit' do
   @phone = params[:phone]
   @datetime = params[:datetime]
   @barber = params[:barber]
+  @color = params[:color]
 
-  erb "#{@username} #{@phone} #{@datetime} #{@barber}"
+  erb "#{@username} #{@phone} #{@datetime} #{@barber} #{@color}"
 end
